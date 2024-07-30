@@ -1,0 +1,125 @@
+/* CountdownTimer.css */
+:root {
+    --background-color-light: #f0f0f0;
+    --container-background-light: #fff;
+    --text-color-light: #000;
+    --input-background-light: #fff;
+    --input-border-light: #ccc;
+    --button-background-light: #007bff;
+    --button-text-light: #fff;
+    --button-hover-light: #0056b3;
+    --alert-background-light: #f44336;
+    --alert-text-light: #fff;
+    --background-color-scheme-light: normal;
+
+    --background-color-dark: #121212;
+    --container-background-dark: #1e1e1e;
+    --text-color-dark: #ffffff;
+    --input-background-dark: #333;
+    --input-border-dark: #555;
+    --button-background-dark: #6200ea;
+    --button-text-dark: #fff;
+    --button-hover-dark: #3700b3;
+    --alert-background-dark: #b00020;
+    --alert-text-dark: #fff;
+    --background-color-scheme-dark: dark;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    margin: 0;
+    color: var(--text-color);
+}
+
+.container {
+    text-align: center;
+    background: var(--container-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 16px;
+    background-color: var(--input-background);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+}
+input[type="date"]{
+    color-scheme: var(--background-color-scheme);
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#countdown div {
+    margin: 0 10px;
+    text-align: center;
+}
+
+#countdown span {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.alert {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--alert-background);
+    color: var(--alert-text);
+    border-radius: 5px;
+}
+
+body.light {
+    --background-color: var(--background-color-light);
+    --container-background: var(--container-background-light);
+    --text-color: var(--text-color-light);
+    --input-background: var(--input-background-light);
+    --input-border: var(--input-border-light);
+    --button-background: var(--button-background-light);
+    --button-text: var(--button-text-light);
+    --button-hover: var(--button-hover-light);
+    --alert-background: var(--alert-background-light);
+    --alert-text: var(--alert-text-light);
+    --background-color-scheme: var(--background-color-scheme-light);
+}
+
+body.dark {
+    --background-color: var(--background-color-dark);
+    --container-background: var(--container-background-dark);
+    --text-color: var(--text-color-dark);
+    --input-background: var(--input-background-dark);
+    --input-border: var(--input-border-dark);
+    --button-background: var(--button-background-dark);
+    --button-text: var(--button-text-dark);
+    --button-hover: var(--button-hover-dark);
+    --alert-background: var(--alert-background-dark);
+    --alert-text: var(--alert-text-dark);
+    --background-color-scheme: var(--background-color-scheme-dark);
+}
